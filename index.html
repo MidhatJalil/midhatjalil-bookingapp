@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bakery Order Booking</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Sevillana&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <img src="logo3.png" alt="">
+        <h1> Yummyy Scrummyy</h1>
+        
+
+        </div>
+    
+    <div class="order-container">
+        <h1>Order Your Desired Sweetness</h1>
+
+        <form id="order-form">
+            <label for="flavor">Select Cake Flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="select flavor">Select Flavor</option>
+
+                <option value="chocolate">Chocolate Cake</option>
+                <option value="vanilla">Vanilla Cake</option>
+                <option value="red Velvet">Red Velvet cake</option>
+                <option value="black forest">Black Forest Cake</option>
+                <option value="ganache cake">Ganache Cake</option>
+            </select>
+
+            <label for="size">Select Cake Size:</label>
+            <select id="size" name="size">
+                <option value="Pound0">Select a size </option>
+                <option value="Pound1">1 Pound- Rs 1000</option>
+                <option value="Pound2">2 Pound- Rs 1800</option>
+                <option value="Pound3">3 Pound - Rs 2600</option>
+                
+            </select>
+
+
+            <label for="cupflavor">Select CupCake Flavor:</label>
+            <select id="cupflavor" name="cupflavor">
+                <option value="select flavor">Select Flavor</option>
+
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="red Velvet">Red Velvet </option>
+                <option value="ganache cupcake">Ganache CupCake</option>
+            </select>
+
+            <label for="cupsize">Select CupCake Quantity:</label>
+            <select id="cupsize" name="cupsize">
+                <option value="Pieces0">Select Quantity:</option>
+                <option value="Pieces6">6 Cupcakes- Rs-700</option>
+                <option value="Pieces12">12 Cupcakes- Rs 1200</option>
+              
+            </select>
+
+            <label for="brownieflavor">Select Brownie Flavor:</label>
+            <select id="brownieflavor" name="brownieflavor">
+                <option value="select flavor">Select Flavor</option>
+                <option value="chocolate">Chocolate Brownie</option>
+                <option value="Double chocolate">Double Chocolate Brownie</option>
+                <option value="Triple chocolate">Triple Chocolate Brownie</option>
+                <option value="walnut">Walnut Brownie</option>
+            </select>
+
+            <label for="browniesize">Select Brownie Quantity:</label>
+            <select id="browniesize" name="browniesize">
+                <option value="Pieces0">Select Quantity</option>
+                <option value="Pieces6">6 Cupcakes - Rs 900</option>
+                <option value="Pieces12">12 Cupcakes - Rs 1700</option>
+              
+            </select>
+
+            <button id="btn1" type="submit">Place Order</button>
+            <button id="btn2" type="submit">Show my Cart</button>
+            
+        </form>
+
+        
+
+        <div id="order-summary" class="order-summary" style="display:none;">
+            <h3>Order Summary:</h3><br>
+            <p id="cake-details"></p><br>
+            <p id="cake-size"></p><br>
+            <p id="cake-price"></p><br>
+            <p id="cupcake-details"></p><br>
+            <p id="cupcake-quantity"></p><br>
+            <p id="cupcake-price"></p><br>
+            <p id="brownie-details"></p><br>
+            <p id="brownie-quantity"></p><br>
+            <p id="brownie-price"></p><br>
+            <p id="total-price"></p>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>

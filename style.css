@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bgimage.jpg) ;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem ;
+
+}
+.navbar h1{
+        font-family: "Sevillana", cursive;
+        font-weight: 500;
+        font-size: 40px;
+        font-style: normal;
+        color: rgb(126, 65, 8);
+    padding:0 2rem;
+        text-shadow: 1px 2px #d49c21;
+         
+      
+      
+}
+
+.navbar img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    
+
+    border: 2px solid rgb(122, 48, 48);
+
+}
+.order-container {
+    width: 50vw;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(130, 133, 118, 0.459);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.order-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #eee5c0;
+}
+
+button {
+    background-color: #377737;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #14524c;
+    /* transition: all 4s ease-out ;
+    transform: scale(3); */
+    color: #becc44;
+}
+
+.order-summary {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #eee5c0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid green;
+}
+#cake-details{
+    border: 1px solid green;
+}
+
+#cake-size{
+    border: 1px solid green;
+}
+#cake-price{
+    border: 1px solid green;
+}
+
+#cupcake-details{
+    border: 1px solid green;
+}
+
+#cupcake-quantity{
+    border: 1px solid green;
+}
+#cupcake-price{
+    border: 1px solid green;
+    
+}
+
+#brownie-details{
+    border: 1px solid green;
+}
+
+#brownie-quantity{
+    border: 1px solid green;
+}
+#brownie-price{
+    border: 1px solid green;
+    
+}
+
+#total-price{
+    border: 2px solid green;
+    color: #000000;
+    font-weight: 700;
+    
+}
+
+@media screen and (max-width:550px) {
+    .navbar{
+        margin-left: 5rem;
+        font-size: 30%;
+        
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .order-container h1{
+        font-size: 25px;
+    }
+    
+
+}
+
+@media screen and (max-width:287px) {
+    .navbar{
+        margin-left: 3rem;
+        padding: 0;
+        
+        
+    }
+    .navbar h1{
+        font-size: 25px;
+        padding:0 1rem;
+    }
+
+    .navbar img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .order-container h1{
+        font-size: 15px;
+    }
+    
+}
+
